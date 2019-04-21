@@ -10,6 +10,13 @@ const dreamsList = document.getElementById('dreams');
 const dreamsForm = document.forms[0];
 const dreamInput = dreamsForm.elements['dream'];
 
+
+const usersList = document.getElementById('users');
+const usersForm = document.getElementById('user-form');
+const userInput = usersForm.elements['users'];
+
+
+
 // a helper function to call when our request for dreams is done
 const getDreamsListener = function() {
   // parse our response to convert to JSON
@@ -21,6 +28,37 @@ const getDreamsListener = function() {
   });
 }
 
+//Users
+//------------------------------------------------------------
+var users= []
+usersForm.onsubmit = function(event) {
+  // stop our form submission from refreshing the page
+  event.preventDefault();
+
+  // get dream value and add it to the list
+  users.push(userInput.value);
+  appendNewuser(userInput.value);
+
+  // reset form 
+  userInput.value = '';
+  userInput.focus();
+}
+
+
+
+
+const appendNewuser = function(user) {
+  const newListItem0 = document.createElement('li');
+  newListItem0.innerHTML = user;
+  usersList.appendChild(newListItem0);
+}
+
+
+//----------------------------------------------------------------
+// the item thing to make the form work
+
+
+//-------------------------------------------------------------------
 // request the dreams from our app's sqlite database
 const dreamRequest = new XMLHttpRequest();
 dreamRequest.onload = getDreamsListener;

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang= "en">
+<head>
+<a href ="/">click to go back to home page</a>
+
+<title>
+sign up 
+</title>
+  
+  
+  
+    </head> 
+<body>
+  
+  <header>
+  <h1>sign up here
+    </h1>
+  </header>
+  <p>
+make a username and pasword
+  </p>
+  
+  <form id = "usersform" method="post" action="/usersform">
+        <input name="username" type="text" maxlength="100" placeholder="enter username here" aria-labelledby="submit">
+    <p>
+       <input name="password" type="text" maxlength="100" placeholder="enter pasword here" aria-labelledby="submit-pasword">
+    </p> 
+   <p>
+       <input name="address" type="text" maxlength="100" placeholder="enter address here" aria-labelledby="submit-address">
+    </p>
+  
+    <p>
+       
+      <input type="radio" id="need_help_n" name="need_help" value="N">
+      <label for="need_help_n">click if want to help</label>  
+    </p>
+    <p>
+      
+       <input type="radio" id="need_help_y" name="need_help" value="Y" checked>
+   
+      <label for="need_help_y">click if you need help</label>
+    </p>
+        <button type="submit" id="submit-users">Submit</button>
+  </form>
+
+  
+  </body>
+</html>

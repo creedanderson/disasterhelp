@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<!--this is for the html of loging in-->
+<head>
+  <a href ="/">click to go back to home page</a>
+  
+<title>
+log in 
+</title>
+  
+</head>
+<body>
+  <heading>
+  <h1>
+    log in here 
+    </h1>
+    <p>
+      enter your username and pasword
+    </p>
+  </heading>
+<p> Username or password is invalid.  </p>
+
+ <form id = "signIn" action="/signIn" method="post">
+        <input name="username" type="text" maxlength="100" placeholder="enter username here" aria-labelledby="submit">
+    <p>
+       <input name="password" type="text" maxlength="100" placeholder="enter password here" aria-labelledby="submit">
+    </p> 
+   
+        <button type="submit" id="submit">Submit </button>
+      </form>
+  
+</body>

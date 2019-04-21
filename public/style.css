@@ -10,6 +10,20 @@ body {
   margin: 2em;
 }
 
+
+  div.navigation {
+  border: 5px solid #00FD92;
+  background-color:#F7FF00;
+  padding-top: 10px;
+  padding-right: 10px;
+  padding-bottom: 10px;
+  padding-left: 10px;
+}
+span.navigation{
+padding:30px;
+
+}
+
 h1 {
   font-style: italic;
   color: #373fff;

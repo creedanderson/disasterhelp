@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+
+<!--this is for the html of the items people need-->
+<html>
+  
+
+<head> 
+<a href ="/">click to go back to home page</a>
+  
+<title>
+items
+</title>
+  
+  <p>
+    if you need help type the items that you need and the url to buy the items so that you can get help
+  </p>
+  <p>
+    if you want to help just type the url into the search bar to buy the item for who needs help
+  </p>
+<style>
+table, th, td {
+  border: 1px solid gold;
+}
+</style>
+  <script src="/items-file.js" defer></script>
+  </head>
+<body>
+  <table id= "items_table">
+    <tr>
+    <th>
+      item 
+      </th>
+      <th>
+      url to buy item
+      </th>
+       <th>
+      quantity
+      </th>
+      <th>
+      when bought
+      </th>
+      <th>
+    who to buy for  
+      </th>
+      <th>
+      click button to mark if bought
+      </th>
+    
+    </tr>
+
+  </table>
+  
+
+
+  
+  
+<heading>
+  <h1>
+   if you are logged in and need help put items here
+  </h1>
+  </heading>
+  
+  <form id= "items-form" action="/itemsform" method="post">
+       <p>
+         <input name="itemName" type="text" maxlength="100" placeholder="type item name here" aria-labelledby="submit-item">
+    </p> 
+
+    <p>
+      <input name="itemUrl" type="text" maxlength="100" placeholder="type item url here" aria-labelledby="submit-item_url">
+    </p>
+    <p>
+       <input name="itemNumber" type="number" maxlength="10" placeholder="type number of items here" aria-labelledby="submit-item_quantity">
+    </p>
+    
+    
+        <button type="submit" id="submit-item">Submit item</button>
+  </form>
+  
+
+  
+            <section class="items">
+        <ul id="items">
+        </ul>
+      </section>
+    
+</body>
+  </html>
